@@ -16,6 +16,12 @@ const userSchema = new Schema({
     },
     role:{
         type: String
+    },
+    bio:{
+        type: String
+    },
+    imageUrl:{
+        type: String
     }
 })
 

@@ -7,6 +7,7 @@ import productRoutes from "./routes/product.js"
 import generalRoutes from "./routes/generalRoutes.js"
 import cartRoutes from "./routes/cart.js"
 import userRoutes from "./routes/user.js"
+import ordersRoutes from "./routes/orders.js"
 
 const app = express()
 dotenv.config()
@@ -18,6 +19,7 @@ app.use('/',productRoutes)
 app.use('/',generalRoutes)
 app.use('/',cartRoutes)
 app.use('/',userRoutes)
+app.use('/',ordersRoutes)
 
 const PORT = process.env.PORT || 8000
 
