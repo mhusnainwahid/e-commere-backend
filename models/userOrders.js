@@ -7,6 +7,12 @@ const orderSchema = new Schema({
   },
   items: [
     {
+      name:{
+        type: String
+      },
+      imageUrl:{
+        type: String
+      },
       productId: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Product',
